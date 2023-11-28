@@ -1,0 +1,40 @@
+﻿  SFML.cpp
+c:\users\irs\desktop\c++\sfml\sfml.cpp(1): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+c:\users\irs\desktop\c++\sfml\sfml.cpp(1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+d:\microsoft\visual studio2022\vc\tools\msvc\14.16.27023\include\sal.h(2361): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+d:\microsoft\visual studio2022\vc\tools\msvc\14.16.27023\include\sal.h(2361): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+c:\users\irs\desktop\c++\sfml\sfml.cpp(8): error C2871: sf: пространство имен с таким именем не существует
+c:\users\irs\desktop\c++\sfml\sfml.cpp(13): error C2653: sf: не является именем класса или пространства имен
+c:\users\irs\desktop\c++\sfml\sfml.cpp(13): error C2065: RenderWindow: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "window"
+c:\users\irs\desktop\c++\sfml\sfml.cpp(13): error C3861: VideoMode: идентификатор не найден
+c:\users\irs\desktop\c++\sfml\sfml.cpp(13): error C3861: window: идентификатор не найден
+c:\users\irs\desktop\c++\sfml\sfml.cpp(15): error C2065: Texture: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "t"
+c:\users\irs\desktop\c++\sfml\sfml.cpp(15): error C2065: t: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(16): error C2065: t: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(18): error C2065: Sprite: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "s"
+c:\users\irs\desktop\c++\sfml\sfml.cpp(18): error C2065: t: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(18): error C3861: s: идентификатор не найден
+c:\users\irs\desktop\c++\sfml\sfml.cpp(19): error C2065: s: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(19): error C3861: Vector2f: идентификатор не найден
+c:\users\irs\desktop\c++\sfml\sfml.cpp(23): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(25): error C2653: sf: не является именем класса или пространства имен
+c:\users\irs\desktop\c++\sfml\sfml.cpp(25): error C2065: Event: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(25): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "event"
+c:\users\irs\desktop\c++\sfml\sfml.cpp(25): error C2065: event: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(26): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(26): error C2065: event: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(28): error C2065: event: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(28): error C2653: sf: не является именем класса или пространства имен
+c:\users\irs\desktop\c++\sfml\sfml.cpp(28): error C2065: Closed: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(29): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(32): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(32): error C2653: Color: не является именем класса или пространства имен
+c:\users\irs\desktop\c++\sfml\sfml.cpp(32): error C2065: White: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(33): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(33): error C2065: s: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(34): error C2065: window: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(36): error C2065: s: необъявленный идентификатор
+c:\users\irs\desktop\c++\sfml\sfml.cpp(36): error C3861: Vector2f: идентификатор не найден
