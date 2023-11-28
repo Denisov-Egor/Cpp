@@ -1,5 +1,0 @@
-﻿  4.cpp
-C:\Users\IRS\Desktop\C++\ДЗ\Легкие задачи\4\4.cpp(9,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-C:\Users\IRS\Desktop\C++\ДЗ\Легкие задачи\4\4.cpp(10,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\IRS\Desktop\C++\ДЗ\Легкие задачи\4\4.cpp(56,27): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-  4.vcxproj -> C:\Users\IRS\Desktop\C++\ДЗ\Легкие задачи\4\x64\Debug\4.exe

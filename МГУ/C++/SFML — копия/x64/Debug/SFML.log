@@ -1,3 +1,0 @@
-﻿  SFML.cpp
-c:\users\irs\desktop\c++\sfml — копия\sfml.cpp(34): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  SFML.vcxproj -> C:\Users\IRS\Desktop\C++\SFML — копия\x64\Debug\SFML.exe
