@@ -11,5 +11,5 @@ int main()
     cin >> a;
 
     b = a % 10;
-    cout << x;
+    cout << b;
 }
