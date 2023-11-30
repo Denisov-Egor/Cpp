@@ -11,16 +11,30 @@ int main()
     cout << "Введите три целых числа:" << endl;
     cin >> a >> b >> c;
 
-    if (a > b && a > c)
+    if (a + b >= c)
     {
-        cout << a;
+        cout << "YES";
     }
-    if (b > a && b > c)
+    else 
     {
-        cout << b;
+        cout << "NO";
     }
-    if (c > a && c > b)
+
+    if (a + c >= b)
     {
-        cout << c;
+        cout << "YES";
     }
+    else
+    {
+        cout << "NO";
+    }
+
+    if (b + c >= a)
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }   
 }
