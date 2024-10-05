@@ -2,5 +2,11 @@
     "C_Cpp.errorSquiggles": "disabled",
     "cSpell.words": [
         "Введите"
-    ]
+    ],
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "iostream": "cpp",
+        "utility": "cpp",
+        "xutility": "cpp"
+    }
 }
