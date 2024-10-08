@@ -31,12 +31,12 @@ int main()
     {
         max = i;
 
-        for ( j = i + 1; j < n; j++)
+       for ( j = i + 1; j < n; j++)
         {
             if (array[j] > array[max])
             {
                 max = j;
-            }
+            } 
         }
     
         int a = array[i];
