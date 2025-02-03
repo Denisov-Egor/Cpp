@@ -13,9 +13,13 @@ int main()
     cin >> L;
 
     A = int(L / 100);       
-    B = int(((L - A * 100) / 10));   
+    cout << A << endl;
+    B = int(((L - A * 100) / 10));  
+    cout << B << endl; 
     C = int(L -A*100-B*10); 
+    cout << C << endl;
     X = A + B + C;
+    cout << X << endl;
 
     cout << "Вывод суммы: ";
     cout << X;
