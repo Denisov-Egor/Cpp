@@ -52,6 +52,22 @@
         "xloctime": "cpp",
         "xmemory": "cpp",
         "xstring": "cpp",
-        "xtr1common": "cpp"
+        "xtr1common": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "map": "cpp",
+        "optional": "cpp",
+        "ratio": "cpp",
+        "set": "cpp",
+        "sstream": "cpp",
+        "stop_token": "cpp",
+        "string": "cpp",
+        "thread": "cpp",
+        "vector": "cpp",
+        "xtree": "cpp"
     }
 }
