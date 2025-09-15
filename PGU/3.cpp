@@ -26,6 +26,4 @@ int main() {
     float average = sum / N;
     
     cout << "Среднее арифметическое: " << average << endl;
-    
-    return 0;
 }
