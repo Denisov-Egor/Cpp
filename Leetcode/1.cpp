@@ -1,21 +1,14 @@
-#include <vector>
-#include <unordered_map>
+#include <string>
+#include <algorithm>
 using namespace std;
 
-vector<int> twoSum(vector<int>& nums, int target) {
-    unordered_map<int, int> num_map;
+bool isPalindrome(int x) 
+{
+    if (x < 0) return false; 
     
-    for (int i = 0; i < nums.size(); i++) {
-        int complement = target - nums[i];
-        
-        if (num_map.find(complement) != num_map.end()) {
-            return {num_map[complement], i};
-        }
-        
-        num_map[nums[i]] = i;
-    }
+    string s = to_string(x);
+    string reversed = s;
+    reverse(reversed.begin(), reversed.end());
     
-    // Добавляем возврат по умолчанию на случай, если решение не найдено
-    // (хотя по условию всегда должно быть решение)
-    return {};
+    return s == reversed;
 }
