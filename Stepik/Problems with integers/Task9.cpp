@@ -10,13 +10,30 @@ using namespace std;
 
 int main() 
 {
-    int n,h,m,s;
+    int hours, minutes, seconds, n;
 
-    h = n / 3600;
-    m = n / 60;
-    s = n % 10;
+    cout << "Введите количество секунд, прошедших с начала суток: ";
     cin >> n;
 
-    cout << h << ":" << m << m << ":" << s;
-    return 0;
+    hours = n / 3600;
+    minutes = (n % 3600) / 60;
+    seconds = n % 60;
+
+    hours = hours % 24;
+
+    cout << hours << ":";
+
+    if (minutes < 10) {
+        cout << "0" << minutes;
+    } else {
+        cout << minutes;
+    }
+    
+    cout << ":";
+    
+    if (seconds < 10) {
+        cout << "0" << seconds;
+    } else {
+        cout << seconds;
+    }fefd
 }
