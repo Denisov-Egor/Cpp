@@ -35,5 +35,5 @@ int main()
         cout << "0" << seconds;
     } else {
         cout << seconds;
-    }fefd
+    }
 }
