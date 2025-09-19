@@ -16,4 +16,4 @@ int main() {
     cout << "Квадрат числа " << number << " равен: " << square << endl;
     
     return 0;
-}
+} 
