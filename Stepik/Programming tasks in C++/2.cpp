@@ -3,5 +3,10 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int a, b, c;
+
+    cin >> a >> b;
+    c = (a + b) * (a + b) + (a - b) * (a - b) - 3 * a * b;
+
+    cout << c;
 }
