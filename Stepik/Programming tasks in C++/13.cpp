@@ -9,7 +9,6 @@ int main() {
     
     for (int i = 0; i < 5; i++) {
         cin >> numbers[i];
-        // Удаляем три младших разряда (делим на 1000)
         int three_digit_number = numbers[i] / 1000;
         sum += three_digit_number;
     }
