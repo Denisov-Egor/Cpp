@@ -46,6 +46,5 @@ int main()
         default:
             cout << "Ошибка! Неверный оператор." << endl;
             break;
-            fabs
     }
 }
