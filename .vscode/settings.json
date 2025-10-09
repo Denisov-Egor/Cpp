@@ -71,5 +71,6 @@
         "thread": "cpp",
         "vector": "cpp",
         "xtree": "cpp"
-    }
+    },
+    "vscodeGoogleTranslate.preferredLanguage": "English"
 }
