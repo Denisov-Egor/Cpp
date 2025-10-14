@@ -11,10 +11,8 @@ int main()
     if (x <= 7)
     {
         F = 3 * x - 9;
-        cout << F;
     }else{
         F = 1 / ( x * x - 4);
-        cout << F;
     }
-    
+    cout << F;
 }
