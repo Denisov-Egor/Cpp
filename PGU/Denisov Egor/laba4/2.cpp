@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int F, x;
+    float F, x;
 
     cin >> x;
 
@@ -16,3 +16,4 @@ int main()
     }
     cout << F;
 }
+
