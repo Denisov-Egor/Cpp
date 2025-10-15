@@ -11,4 +11,4 @@ int main()
     b = x - pow(x, 3) / 3 + pow(x, 5) / 5;
 
     cout << b;
-}
+} 
