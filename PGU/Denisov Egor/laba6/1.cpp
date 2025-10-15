@@ -15,7 +15,7 @@ int main()
     for (int i = a; i <= b; i++) {
         if (i > 0 && i % 4 == 0) {
             sum += i;
-            cout << i << " ";
+            cout << i << " ";  
         }
     }
     
