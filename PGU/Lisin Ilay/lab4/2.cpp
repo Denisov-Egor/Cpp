@@ -8,12 +8,11 @@ int main()
 
     cin >> x;
 
-    if (x <= 7)
+    if (x > 3)
     {
-        F = 3 * x - 9;
+        F = -3 * x + 9;
     }else{
-        F = 1 / ( x * x - 4);
+        F = x * x * x /(x * x + 8);
     }
     cout << F;
 }
-

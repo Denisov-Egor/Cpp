@@ -16,7 +16,7 @@ int main ()
     cout << "Введите угол в градусах: ";
     cin >> alpha; 
 
-   area = (b*b - a*a) * tan(alpha) / 4.0;
+   area = (b*b - a*a) * tan(alpha) / 4;
 
     cout << "Площадь трапеции: " << area; 
 }
