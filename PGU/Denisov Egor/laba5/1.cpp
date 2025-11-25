@@ -24,7 +24,7 @@ int main()
 
     switch (remainder)
     {
-    case 0:
+    case 0: 
         expr = integer_part;
         break;
 
