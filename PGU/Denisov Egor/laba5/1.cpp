@@ -18,7 +18,7 @@ int main()
     fractional_part = expr - integer_part;
 
     remainder = integer_part % 4;
-
+    
     cout << "Исходное выражение: " << expr << endl;
     cout << "Остаток от деления на 4: " << remainder << endl; 
 
