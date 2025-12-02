@@ -22,4 +22,4 @@ int main()
 
     cout << "sh(x) = " << sum << endl;
     cout << "Проверка: " << sinh(x) << endl;
-}
+} 
