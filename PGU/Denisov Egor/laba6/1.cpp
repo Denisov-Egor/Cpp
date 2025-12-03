@@ -13,8 +13,10 @@ int main()
 
     cout << "Числа, кратные 4: ";\
     
-    for (int i = a; i <= b; i++) {
-        if (i > 0 && i % 4 == 0) {
+    for (int i = a; i <= b; i++) 
+    {
+        if (i > 0 && i % 4 == 0) 
+        {
             sum += i;
             cout << i << " ";  
         }

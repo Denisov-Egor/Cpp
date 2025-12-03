@@ -5,21 +5,30 @@ using namespace std;
 
 int main() 
 {
-    double x;
+    float x;
+    float sum = 0;
+    float term;
+    int n = 1;
+
     cout << "Введите x: ";
     cin >> x;
 
-    double sum = 0;
-    double term = x;
-    int n = 1;
+    cout << "Введите кол-во членов ряда: ";
+    cin >> term;
 
-    for (int i = 0; i < 20; i++) 
-    { 
-        sum += term;
-        term = term * x * x / ((2*n + 1) * (2*n + 2));
+    while (n <= term)
+    {
+        term = pow(x, 2 * n + 1) / tgamma(2 * n + 2);
+        if (n % 2 == 1)
+        {
+            sum += term;
+        } else
+        {
+            sum -= term;
+        }
         n++;
     }
-
+    
     cout << "sh(x) = " << sum << endl;
     cout << "Проверка: " << sinh(x) << endl;
 } 

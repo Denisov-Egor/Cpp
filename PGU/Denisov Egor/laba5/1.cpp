@@ -27,7 +27,6 @@ int main()
     case 0: 
         expr = integer_part;
         break;
-
     case 1:
         expr = expr - integer_part;
         break;
