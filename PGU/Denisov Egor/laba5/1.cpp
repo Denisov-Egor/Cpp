@@ -1,36 +1,42 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
-int main()
+int main() 
 {
-    int integer_part, remainder;
-    double a, b, c, expr, fractional_part ;
+    int a, b, k, c, r;
 
-    cout << "Введите значения a, b, c: ";
-    cin >> a >> b >> c;
+    cout << "Введите значение a: ";
+    cin >> a;
+    cout << "Введите значение b: ";
+    cin >> b;
+    cout << "Введите значение k: ";
+    cin >> k;
 
-    expr = sin(a + b) * 0.5 * c;
+    c = k * (a + b);
 
-    integer_part = static_cast<int>(expr);
+    r = c % 4;
+ 
+    cout << "\nИсходное значение выражения: " << c << endl;
+    cout << "Остаток от деления на 4: " << r << endl;
 
-    fractional_part = expr - integer_part;
-
-    remainder = integer_part % 4;
-    
-    cout << "Исходное выражение: " << expr << endl;
-    cout << "Остаток от деления на 4: " << remainder << endl; 
-
-    switch (remainder)
+    switch(r) 
     {
-    case 0: 
-        expr = integer_part;
+        case 0:
+            cout << "Остаток равен 0, значение выражения не изменяется." << endl;
         break;
-    case 1:
-        expr = expr - integer_part;
+        case 1:
+            c = c - r;
+        break;
+        case 2:
+            c = c + r;
+            cout << "Остаток равен 2, увеличиваем значение на 2" << endl;
+        break;
+        case 3:
+            c = c - r;
+            cout << "Остаток равен " << r << ", уменьшаем значение на " << r << endl;
         break;
     }
 
-    cout << "Финальное выражение: " << expr << std::endl;
+    cout << "Конечное значение выражения: " << c << endl;
 }
