@@ -4,14 +4,14 @@ using namespace std;
 
 int main()
 {
-    int a, b, sum;
+    int a, b, sum = 0;
 
     cout << "Введите начало интервала a: ";
     cin >> a;
     cout << "Введите конец интервала b: ";
     cin >> b;
 
-    cout << "Числа, кратные 4: ";\
+    cout << "Числа, кратные 4: ";
     
     for (int i = a; i <= b; i++) 
     {
@@ -22,5 +22,5 @@ int main()
         }
     }
     
-    cout << endl << "Сумма положительных чисел, кратных 4: " << sum << endl;   
+    cout << endl << "Сумма положительных чисел, кратных 4: " << sum << endl;
 }
