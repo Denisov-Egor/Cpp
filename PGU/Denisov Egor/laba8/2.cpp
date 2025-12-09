@@ -1,47 +1,34 @@
 #include <iostream>
-
-#include <climits>
-
 using namespace std;
 
-int main()
+int main() 
 {
     const int MAX_SIZE = 100;
-    int a[MAX_SIZE];
-    int n, x;
-
+    int arr[MAX_SIZE], n, x, min_val, last_index = -1;
+    
     do {
-        cout << "Введите количество элементов массива (0 < n <= " << MAX_SIZE << "): ";
+        cout << "Введите n (1-" << MAX_SIZE << "): ";
         cin >> n;
-    } while (n <= 0 || n > MAX_SIZE);
-
-    cout << "Введите элементы массива:" << endl;
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
-    }
-
-    cout << "Введите значение x: ";
+    } while (n < 1 || n > MAX_SIZE);
+    
+    cout << "Введите элементы:\n";
+    for (int i = 0; i < n; i++) cin >> arr[i];
+    
+    cout << "Введите x: ";
     cin >> x;
-
-    int minElement = INT_MAX;
-    int lastMinIndex = -1;
-
-    for (int i = 0; i < n; i++) {
-        if (a[i] < x) {
-            if (a[i] < minElement) {
-                minElement = a[i];
-                lastMinIndex = i;
-            } else if (a[i] == minElement) {
-                lastMinIndex = i; 
-            }
+    
+    for (int i = 0; i < n; i++) 
+    {
+        if (arr[i] < x && (last_index == -1 || arr[i] <= min_val)) {
+            min_val = arr[i];
+            last_index = i;
         }
     }
-
-    if (lastMinIndex == -1) 
+    
+    if (last_index == -1) 
     {
-        cout << "Нет элементов, меньших " << x << endl;
+        cout << "Нет элементов меньше " << x << endl;
     } else {
-        cout << "Номер последнего минимального элемента среди элементов, меньших " << x << ": " << lastMinIndex + 1 << endl;
-        cout << "Значение этого элемента: " << a[lastMinIndex] << endl;
+        cout << "Позиция: " << last_index + 1 << ", значение: " << arr[last_index] << endl;
     }
 }
