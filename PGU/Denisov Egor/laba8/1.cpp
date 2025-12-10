@@ -34,10 +34,8 @@ int main()
         }
     }
 
-    cout << "Изменённый массив:\n";
     for (int i = 0; i < n; i++) 
     {
         cout << mas[i] << " ";
     }
-    cout << endl;
 }

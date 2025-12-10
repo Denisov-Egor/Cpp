@@ -12,7 +12,10 @@ int main()
     } while (n < 1 || n > MAX_SIZE);
     
     cout << "Введите элементы:\n";
-    for (int i = 0; i < n; i++) cin >> arr[i];
+    for (int i = 0; i < n; i++) 
+    {
+        cin >> arr[i];
+    }
     
     cout << "Введите x: ";
     cin >> x;
