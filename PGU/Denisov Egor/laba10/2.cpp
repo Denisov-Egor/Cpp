@@ -10,6 +10,12 @@ int main()
     cout << "Введите предложение (должно заканчиваться точкой): ";
     getline(cin, sentence);
 
+    if (sentence.back() != '.') 
+    {
+        cout << "Ошибка: предложение должно заканчиваться точкой!" << endl;
+        return 1;
+    }
+
     sentence.pop_back();
 
     size_t spacePos = sentence.find(' ');
@@ -19,7 +25,7 @@ int main()
     {
         firstWord = sentence.substr(0, spacePos);
     } else {
-        firstWord = sentence; 
+        firstWord = sentence;
     }
 
     cout << "Первое слово: " << firstWord << endl;
