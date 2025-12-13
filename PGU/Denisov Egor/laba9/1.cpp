@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <ctime>
 
 using namespace std;
@@ -17,7 +16,7 @@ int main()
     {
         for (int j = 0; j < N; j++) 
         {
-            arr[i][j] = rand() % 21 - 10;
+            arr[i][j] = rand() %10;
             cout << arr[i][j] << "\t";
             if (arr[i][j] == 0) zeroCount++;
         }
