@@ -7,19 +7,17 @@ int main()
     const int c = 100; 
     int n, mas[c], max;
 
-    do {
-        cout << "Введите количество элементов n (0 < n <= " << c << "): ";
-        cin >> n;
-    } while (n <= 0 || n > c);
+    cout << "Введите количество элементов n: ";
+    cin >> n;
 
     cout << "Введите элементы массива:\n";
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n - 1; i++) 
     {
         cin >> mas[i];
     }
 
     max = mas[0];
-    for (int i = 1; i < n; i++) 
+    for (int i = 1; i < n - 1; i++) 
     {
         if (mas[i] > max) 
         {
@@ -27,14 +25,14 @@ int main()
         }
     }   
 
-    for (int i = 0; i < n; i++) 
+    cout << "Максимальный элемент массива: " << max << endl;
+
+    for (int i = 4; i < n - 1; i += 5) 
     {
-        if ((i + 1) % 5 == 0) {
             mas[i] = max;
-        }
     }
 
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n - 1; i++) 
     {
         cout << mas[i] << " ";
     }

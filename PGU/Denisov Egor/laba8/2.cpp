@@ -1,37 +1,36 @@
 #include <iostream>
+
 using namespace std;
 
 int main() 
 {
-    const int MAX_SIZE = 100;
-    int arr[MAX_SIZE], n, x, min_val, last_index = -1;
-    
-    do {
-        cout << "Введите n (1-" << MAX_SIZE << "): ";
-        cin >> n;
-    } while (n < 1 || n > MAX_SIZE);
-    
-    cout << "Введите элементы:\n";
-    for (int i = 0; i < n; i++) 
+    const int c = 100; 
+    int n, mas[c], min, x;
+    int n_min;
+
+    cout << "Введите количество элементов n: ";
+    cin >> n;
+
+    cout << "Введите элементы массива:\n";
+    for (int i = 0; i < n - 1; i++) 
     {
-        cin >> arr[i];
+        cin >> mas[i];
     }
-    
+
     cout << "Введите x: ";
     cin >> x;
     
-    for (int i = 0; i < n; i++) 
+    min = mas[0];
+    n_min = 0;
+    for (int i = 1; i < n - 1; i++) 
     {
-        if (arr[i] < x && (last_index == -1 || arr[i] <= min_val)) {
-            min_val = arr[i];
-            last_index = i;
+        if (mas[i] <= min && mas[i] < x) 
+        {
+            min = mas[i];
+            n_min = i;
         }
-    }
-    
-    if (last_index == -1) 
-    {
-        cout << "Нет элементов меньше " << x << endl;
-    } else {
-        cout << "Позиция: " << last_index + 1 << ", значение: " << arr[last_index] << endl;
-    }
+    }   
+
+    cout << "Минимальный элемент массива меньший x: " << min << endl;
+    cout << "Номер минимального элемента массива меньший x: " << n_min << endl;
 }
