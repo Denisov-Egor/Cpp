@@ -12,11 +12,11 @@ int main()
     srand(time(NULL));
 
     cout << "Созданный массив 10x10:" << endl;
-    for (int i = 0; i < N; i++) 
+    for (int i = 0; i < N - 1; i++) 
     {
-        for (int j = 0; j < N; j++) 
+        for (int j = 0; j < N - 1; j++) 
         {
-            arr[i][j] = rand() %10;
+            arr[i][j] = rand() %21 - 10;
             cout << arr[i][j] << "\t";
             if (arr[i][j] == 0) zeroCount++;
         }
