@@ -13,11 +13,7 @@ int main()
 
     for (char c : str) 
     {
-        if (c >= '0' && c <= '9') 
-        {
-            count++;
-        }
+        if (c >= '0' && c <= '9') count++;
     }
-
     cout << "Количество цифр в строке: " << count << endl;
 }
