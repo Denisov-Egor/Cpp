@@ -2,9 +2,10 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    double x = 0.5;  // Пример значения
-    int n = 10;      // Количество членов
+int main() 
+{
+    double x = 0.5;  
+    int n = 10;    
     
     double result = x;
     double term = x;
